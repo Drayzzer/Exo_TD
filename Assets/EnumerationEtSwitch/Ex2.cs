@@ -5,11 +5,12 @@ namespace EnumerationEtSwitch
 {
     public class Ex2 : MonoBehaviour
     {
+        //TODO Refaire switch avec DaysOfWeek
         enum DaysOfWeek { Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi, Dimanche };
         //enum est le mot clé pour déclarer une énumeration
         void Start()
         { 
-            int today = 4;
+            DaysOfWeek today = DaysOfWeek.Jeudi;
             // est une instruction
             // int est un type entier
             // today est le nom de la variable
@@ -19,28 +20,27 @@ namespace EnumerationEtSwitch
             // c'est comme une version amélioré 
             //today est la variable qu'on vérifie dans le switch
             {
-                case 0 :
+                case DaysOfWeek.Lundi:
                     //case est comme un if exemple si la variable = 0 alors afficher 
-                    //0 est la valeur qu'on met dans le cas ou today = 0
                     Debug.Log("Début de semaine !");
                     break;
                 // break permet de casser la boucle si le cas est true
-                case 1 :
+                case DaysOfWeek.Mardi :
                     Debug.Log("La semaine ne fait que commencer");
                     break;
-                case 2 :
+                case DaysOfWeek.Mercredi :
                     Debug.Log("C'est le milieu de la semaine");
                     break;
-                case 3 :
+                case DaysOfWeek.Jeudi :
                     Debug.Log("bientot le weekend");
                     break;
-                case 4 :
+                case DaysOfWeek.Vendredi :
                     Debug.Log("c'est le weekend !!");
                     break;
-                case 5 :
+                case DaysOfWeek.Samedi :
                     Debug.Log("profite ma poule il te reste 40 ans a tirer");
                     break;
-                case 6 :
+                case DaysOfWeek.Dimanche :
                     Debug.Log("prepare toi pour demain");
                     break;
                 default :

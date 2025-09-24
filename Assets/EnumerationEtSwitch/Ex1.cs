@@ -4,7 +4,7 @@ namespace EnumerationEtSwitch
 {
     public class Ex1 : MonoBehaviour
     {
-        enum DaysOfWeek { Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi, Dimanche };
+        enum DaysOfWeek { Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi, Dimanche }
         //enum est le mot clé pour déclarer une énumeration 
         // DaysOfWeek est le nom de la déclaration
         // { est le caractère d'ouverture et } permet de fermer 
@@ -13,7 +13,7 @@ namespace EnumerationEtSwitch
 
         void Start()
         {
-            DaysOfWeek today = (DaysOfWeek)4;
+            DaysOfWeek today = DaysOfWeek.Lundi;
             // DaysOfWeek est le type de la variable
             // today est le nom de la variable
             // = est un opérateur d'assignation qui assigne la valeur de droite a celui de gauche

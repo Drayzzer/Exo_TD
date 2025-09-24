@@ -13,16 +13,16 @@ namespace EnumerationEtSwitch
             {
                 switch (enemy)
                 {
-                    case 0:
+                    case EnemyType.Goblin:
                         Debug.Log("petit et relou");
                         break;
-                    case (EnemyType)1:
+                    case EnemyType.Orc:
                         Debug.Log("sac a pv");
                         break;
-                    case (EnemyType)2:
+                    case EnemyType.Troll:
                         Debug.Log("trop puissant mais pas beau");
                         break;
-                    case (EnemyType)3:
+                    case EnemyType.Dragon:
                         Debug.Log("le style a l'état pur");
                         break;
                 }

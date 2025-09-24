@@ -6,21 +6,20 @@ namespace EnumerationEtSwitch
     public class Ex3 : MonoBehaviour
     {
         public GameState _currentState;
-       
         void Update()
         {
             switch (_currentState)
             {
-                case 0 :
+                case GameState.Menu :
                     Debug.Log("Menu");
                     break;
-                case (GameState) 1 :
+                case GameState.Playing :
                     Debug.Log("Playing");
                     break;
-                case (GameState) 2 :
+                case GameState.Paused :
                     Debug.Log("Paused");
                     break;
-                case (GameState)3 :
+                case GameState.GameOver :
                     Debug.Log("GameOver");
                     break;
                 default:

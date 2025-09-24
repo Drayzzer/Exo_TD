@@ -2,12 +2,22 @@ using UnityEngine;
 
 namespace EnumerationEtSwitch
 {
-    [System.Flags] enum WeaponType {Sword, Bow, Axe, Staff}
+    [System.Flags]
+    public enum WeaponType
+    {
+        Sword = 1, 
+        Bow = 2, 
+        Axe = 4,
+        Staff = 8
+    }
+    
     public class Bonus : MonoBehaviour
     {
+        
+        public WeaponType myWeapons;
+        
         void Start()
         {
-            WeaponType myWeapons = WeaponType.Sword | WeaponType.Bow | WeaponType.Axe | WeaponType.Staff;
 
             if (myWeapons == WeaponType.Sword)
             {

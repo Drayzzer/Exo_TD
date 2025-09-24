@@ -14,16 +14,16 @@ namespace EnumerationEtSwitch
             {
                 switch (_selectedColor)
                 {
-                    case 0:
+                    case ColorChoice.Red:
                         obj.GetComponent<Renderer>().material.color = Color.red;
                         break;
-                    case (ColorChoice)1:
+                    case ColorChoice.Green:
                         obj.GetComponent<Renderer>().material.color = Color.darkOliveGreen;
                         break;
-                    case (ColorChoice)2:
+                    case ColorChoice.Blue:
                         obj.GetComponent<Renderer>().material.color = Color.darkBlue;
                         break;
-                    case (ColorChoice)3:
+                    case ColorChoice.Yellow:
                         obj.GetComponent<Renderer>().material.color = Color.yellowNice;
                         break;
                 }
